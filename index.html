@@ -1,216 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Anita Manokore uses data, design, and technology to solve practical problems for local businesses and care organizations.">
-  <title>Anita Manokore Consulting | Digital Marketing &amp; Data</title>
-  <style>
-    :root {
-      --paper:#fbf8f3; --ink:#28222b; --muted:#605660; --accent:#633b53;
-      --line:#e2d8d3; --light:#f2e9ed; --surface:#fffdfb; --frame:#ede4df;
-      --accent-hover:#49283b; --shadow:#35243616;
-    }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font: 1.0625rem/1.65 "Geist","Segoe UI",sans-serif; }
-    a { color:var(--accent); text-underline-offset:.24em; }
-    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
-    .wrap { width:min(68rem, calc(100% - 3rem)); margin-inline:auto; }
-    header { border-bottom:1px solid var(--line); }
-    .top { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem 2rem; padding-block:1.25rem; }
-    .brand { font-weight:700; text-decoration:none; color:var(--ink); }
-    nav { display:flex; flex-wrap:wrap; gap:.4rem 1.3rem; }
-    nav a { display:inline-block; padding-block:.25rem; font-size:.92rem; }
-    section { padding-block:clamp(2.7rem, 7vw, 5rem); }
-    h1,h2,h3,p,figure { margin:0; }
-    h1,h2 { font-family:"Baskervville",Georgia,serif; font-weight:400; line-height:1.05; letter-spacing:-.025em; }
-    h1 { font-size:clamp(2.65rem, 5.9vw, 5.2rem); max-width:13ch; }
-    h2 { font-size:clamp(2.2rem, 4.4vw, 3.4rem); }
-    h3 { font-size:1.15rem; line-height:1.35; }
-    p { color:var(--muted); }
-    h1 + p, h2 + p { margin-top:1.1rem; max-width:62ch; }
-    h3 + p { margin-top:.5rem; }
-    .hero { display:grid; grid-template-columns:1.35fr 1fr; align-items:center; gap:clamp(1.5rem, 6vw, 5rem); }
-    .intro { color:var(--accent); font-weight:650; margin-bottom:.65rem; }
-    .portrait img { display:block; width:100%; height:auto; aspect-ratio:4/4.65; object-fit:cover; object-position:center 13%; border-radius:1rem; }
-    .button { display:inline-block; margin-top:1.4rem; border-radius:.4rem; background:var(--accent); color:white; padding:.75rem 1.15rem; text-decoration:none; font-weight:650; }
-    .button:hover { background:var(--accent-hover); }
-    .border { border-top:1px solid var(--line); }
-    .services,.proof { display:grid; gap:1.5rem; margin-top:2rem; }
-    .services { grid-template-columns:repeat(2,minmax(0,1fr)); }
-    .proof { grid-template-columns:repeat(3,minmax(0,1fr)); }
-    .tile { border-top:1px solid var(--line); padding-top:1rem; }
-    .metric { display:block; color:var(--accent); font:2.5rem/1.1 Georgia,serif; margin-bottom:.65rem; }
-    .education { margin-top:2rem; border-top:1px solid var(--line); padding-top:1rem; }
-    .education ul,.steps { padding-left:1.35rem; }
-    .steps li,.package li { margin-bottom:.4rem; }
-    .offer { display:grid; grid-template-columns:1fr 1.2fr; gap:clamp(2rem, 6vw, 5rem); align-items:start; }
-    .package { background:var(--light); padding:clamp(1.25rem, 4vw, 2.25rem); border-radius:1rem; }
-    .price { color:var(--accent); font-weight:700; margin-top:.8rem; }
-    .package ul { padding-left:1.25rem; }
-    .contact { background:var(--light); }
-    .contact-note { margin-top:.85rem; overflow-wrap:anywhere; }
-    .project-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.1rem; margin-top:1.75rem; }
-    .project-card {
-      display:flex; flex-direction:column; gap:.8rem; min-width:0;
-      padding:1.4rem; border:1px solid var(--line); border-radius:1rem;
-      background:var(--card); color:var(--ink); text-decoration:none;
-      transition:transform .2s ease, box-shadow .2s ease;
-    }
-    .project-card:hover { transform:translateY(-4px); box-shadow:0 .5rem 1.2rem var(--shadow); }
-    .project-card h3 { font:1.65rem/1.12 Georgia,serif; }
-    .project-card p { font-size:.96rem; }
-    .project-card .project-action { margin-top:auto; font-size:.9rem; font-weight:700; color:var(--accent); }
-    .project-card:hover .project-action { text-decoration:underline; }
-    .deux { --card:#f2e4eb; }
-    .eco { --card:#efe6da; }
-    .wise { --card:#eae6ef; }
-    @media (prefers-reduced-motion:reduce) {
-      .project-card { transition:none; }
-      .project-card:hover { transform:none; }
-    }
-    footer { padding-block:1.25rem; font-size:.92rem; }
-    @media (max-width:720px) {
-      .wrap { width:calc(100% - 2rem); }
-      .hero,.offer,.proof,.project-grid { grid-template-columns:1fr; }
-      .portrait { max-width:26rem; }
-    }
-    @media (max-width:460px) { .services { grid-template-columns:1fr; } }
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anita Manokore Consulting — Digital marketing & data services</title>
+<meta name="description" content="Anita Manokore Consulting helps local businesses and care teams make sense of data, improve digital marketing, and make it easier for customers to get in touch. Explore the Visibility & Inquiries Starter, starting at $500.">
+<style>
+:root{--ink:#f4f7ff;--muted:#b6c3d9;--paper:#0b1120;--sage:#233b63;--deep:#9dc7ff;--pale:#111c30;--line:#334666;--white:#0b1426}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 Arial,Helvetica,sans-serif}a{color:inherit;text-underline-offset:5px}a:focus-visible{outline:3px solid var(--deep);outline-offset:6px}::selection{background:var(--sage);color:var(--ink)}.wrap{max-width:1320px;margin:auto;padding-left:64px;padding-right:64px}header{position:sticky;top:0;z-index:20;background:rgba(11,17,32,.98)}.header-row{min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:28px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-size:14px;line-height:1.35;letter-spacing:-.25px}.brand-mark{display:grid;place-items:center;width:40px;height:44px;border:1px solid var(--deep);font:21px Georgia,serif;letter-spacing:-2px;color:var(--deep)}.brand-name{max-width:175px}.brand-name strong{font-weight:500;display:block}.brand-name small{font-size:10px;letter-spacing:1.8px;text-transform:uppercase}nav{display:flex;align-items:center;gap:29px}nav a{font-size:12px;text-decoration:none;padding:10px 0}nav a:hover{color:var(--deep);text-decoration:underline}.nav-contact{background:var(--ink);color:var(--paper);padding:11px 20px}nav .nav-contact:hover{color:var(--ink);background:var(--sage);text-decoration:none}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{font-size:clamp(62px,7.6vw,104px);letter-spacing:-5px;line-height:1.02;margin:0;max-width:830px}h1 em{color:var(--deep);font-weight:400}h2{font-size:48px;letter-spacing:-1.8px;line-height:1.08;margin-bottom:22px}h3{font-weight:500;font-size:21px;line-height:1.25;letter-spacing:-.5px;margin-bottom:11px}.kicker{font:10px/1.5 Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--deep);margin-bottom:26px}.hero{padding-top:65px;padding-bottom:50px;display:grid;grid-template-columns:1fr 255px;gap:27px 50px}.hero .kicker{grid-column:1/-1;margin-bottom:5px}.hero-main{padding-left:5%}.hero-copy{max-width:420px;font-size:15px;color:var(--muted);margin:27px 0}.button{display:inline-flex;justify-content:space-between;align-items:center;gap:32px;min-height:48px;padding:12px 20px;background:var(--deep);color:var(--white);font-size:12px;text-decoration:none;line-height:1.4}.button:hover{background:var(--ink)}.arrow{font-size:21px;line-height:1}.hero-note{align-self:end;border-left:1px solid var(--line);padding-left:26px;margin-bottom:5px;font-size:12px;color:var(--muted)}.hero-note .kicker{margin-bottom:18px;font-size:9px}.hero-note p{margin-bottom:18px}.hero-note .price-link{display:block;font-family:Georgia,serif;font-size:31px;line-height:1.15;color:var(--ink);text-decoration:none;letter-spacing:-1px;margin-bottom:16px}.price-link small{display:block;font:11px Arial,sans-serif;letter-spacing:0;margin-top:10px}.text-link{font-size:11px;text-decoration-thickness:1px;color:var(--deep)}.hero-foot{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:19px;margin-top:28px}section{scroll-margin-top:100px}.section-heading{display:flex;justify-content:space-between;gap:30px;align-items:baseline}.section-heading h2{font-size:39px}.section-heading .kicker{font-size:9px}.work{padding-top:10px;padding-bottom:66px}.projects{display:grid;grid-template-columns:1fr 1.14fr 1fr;gap:22px;align-items:start}.project{display:block;text-decoration:none}.project:nth-child(2){margin-top:28px}.project-art{height:170px;display:grid;place-items:center;overflow:hidden;transition:background .2s;background:#131f35;border:1px solid #365378}.project:nth-child(2) .project-art{background:#142843}.project:nth-child(3) .project-art{background:#19243d}.project svg{width:100%;height:100%;color:var(--deep);transition:transform .2s}.project:hover svg{transform:scale(1.04)}.project:hover h3{text-decoration:underline;text-underline-offset:4px}.project-heading{display:flex;justify-content:space-between;gap:14px;margin-top:19px}.project h3{font-size:18px}.project p{font-size:12px;color:var(--muted);line-height:1.65;margin:0;max-width:335px}.project .arrow{font-size:19px}.story{border-top:1px solid var(--ink);display:grid;grid-template-columns:300px 1fr;gap:86px;padding-top:54px;padding-bottom:75px}.portrait{height:355px;position:relative;background:var(--sage);border:1px solid var(--deep);padding:13px;margin:7px 15px 29px 0;box-shadow:12px 12px 0 var(--pale)}.portrait-inner{height:100%;border:1px solid #45678f;display:flex;align-items:end;padding:17px 9px 40px;position:relative;overflow:hidden}.portrait .am{font-family:Georgia,serif;font-size:143px;line-height:.85;letter-spacing:-19px;color:var(--deep)}.portrait-label{position:absolute;left:13px;bottom:13px;font-size:8px;letter-spacing:1.4px;text-transform:uppercase}.profile-name{font-size:18px;margin-bottom:3px}.profile-role{font-size:11px;color:var(--muted);margin-bottom:26px}.education{font-size:11px;color:var(--muted);line-height:1.8;border-top:1px solid var(--line);padding-top:19px}.education strong{display:block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;color:var(--deep);margin-bottom:12px}.story-copy h2{max-width:520px}.narrative{font-size:14px;color:var(--muted);max-width:585px}.narrative p{margin-bottom:16px}.story-copy .kicker{margin-bottom:23px}.results{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:30px}.result{border-top:1px solid var(--line);padding-top:16px}.result:first-child{grid-column:1/-1;display:grid;grid-template-columns:230px 1fr;align-items:center;gap:25px;border-top:1px solid var(--deep);padding-top:20px}.figure{font:45px/1.1 Georgia,serif;letter-spacing:-2px;color:var(--deep);display:block;margin-bottom:9px}.result:first-child .figure{font-size:66px;margin-bottom:0;letter-spacing:-3px}.result p{font-size:11px;color:var(--muted);margin-bottom:0;line-height:1.65}.result-note{font-size:10px;color:var(--muted);margin-top:22px;margin-bottom:0}.services{background:var(--pale);padding-top:59px;padding-bottom:65px;position:relative}.services:before{content:'';position:absolute;left:0;top:-13px;width:34%;height:13px;background:var(--sage)}.services-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:100px;align-items:end;margin-bottom:44px}.services-intro h2{font-size:41px;max-width:615px;margin-bottom:0;line-height:1.15}.services-intro blockquote{font-family:Georgia,serif;font-size:20px;line-height:1.55;color:var(--deep);margin:0;padding-left:23px;border-left:1px solid #6384aa}.services-body{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start}.service-list{padding-top:3px}.service-row{padding:19px 0;border-top:1px solid #3b5277;display:grid;grid-template-columns:32px 1fr;gap:15px}.service-row .index{font:10px Georgia,serif;color:var(--deep);padding-top:4px}.service-row h3{font-size:17px;letter-spacing:-.3px;margin-bottom:8px}.service-row p{font-size:12px;color:var(--muted);margin-bottom:0;max-width:355px}.package{background:var(--paper);padding:29px 32px 30px;border-top:3px solid var(--deep)}.package .kicker{font-size:9px;margin-bottom:11px}.package h3{font-family:Georgia,serif;font-size:27px;line-height:1.2;max-width:300px;margin-bottom:24px}.price-row{display:flex;justify-content:space-between;align-items:end;gap:20px}.price{font-family:Georgia,serif;font-size:65px;letter-spacing:-3px;line-height:1;margin:0;color:var(--deep)}.price span{display:block;font:10px Arial,sans-serif;letter-spacing:0;color:var(--muted);margin-bottom:8px}.once{font-size:10px;color:var(--muted);margin-bottom:7px}.price-note{font-size:10px;color:var(--muted);margin:14px 0 22px}.package ul{list-style:none;padding:0;margin:0 0 20px}.package li{font-size:12px;border-top:1px solid var(--line);padding:9px 0}.package li:before{content:'+';color:var(--deep);margin-right:13px}.package .button{width:100%}.ongoing{font-size:11px;margin:17px 0 0;color:var(--muted)}.ongoing strong{font-weight:500;color:var(--ink)}.contact{display:grid;grid-template-columns:1fr 1fr;gap:100px;padding-top:65px;padding-bottom:70px}.contact h2{font-size:58px;max-width:430px;letter-spacing:-2px;margin-bottom:21px}.contact-copy{font-size:13px;color:var(--muted);max-width:340px;margin:0}.contact-right{align-self:end;padding-bottom:4px}.contact-right .kicker{font-size:9px;margin-bottom:13px}.email{font-family:Georgia,serif;font-size:clamp(22px,2.45vw,33px);letter-spacing:-.8px;text-decoration-thickness:1px;overflow-wrap:anywhere}.contact-right .button{margin-top:28px}.contact-sub{font-size:11px;color:var(--muted);margin:16px 0 0}footer{border-top:1px solid var(--line)}.footer-row{padding-top:23px;padding-bottom:25px;display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-row strong{font-size:12px;font-weight:500}.footer-row p{font-size:10px;color:var(--muted);margin:0}@media(min-width:1500px){.hero{padding-top:80px}}@media(max-width:1050px){.wrap{padding-left:35px;padding-right:35px}.hero{grid-template-columns:1fr 210px;gap:25px 28px}h1{font-size:78px;letter-spacing:-4px}.hero-main{padding-left:0}.hero-note{padding-left:20px}.story{grid-template-columns:245px 1fr;gap:45px}.portrait{height:310px}.portrait .am{font-size:118px;letter-spacing:-15px}.result:first-child{grid-template-columns:1fr;gap:8px}.services-intro,.services-body,.contact{gap:45px}.services-intro h2{font-size:34px}.services-intro blockquote{font-size:18px}.package{padding:25px}.project h3{font-size:16px}.contact h2{font-size:48px}.email{font-size:26px}.hero-foot{margin-top:15px}}@media(max-width:720px){html{scroll-padding-top:118px}section{scroll-margin-top:118px}.wrap{padding-left:23px;padding-right:23px}.header-row{display:block;min-height:108px;padding-top:13px;padding-bottom:9px}.brand{gap:10px;font-size:12px}.brand-mark{width:30px;height:34px;font-size:18px}.brand-name{max-width:none}.brand-name strong{display:inline}.brand-name small{font-size:8px;letter-spacing:1px;display:block;margin-top:2px}nav{justify-content:space-between;gap:16px;margin-top:10px}nav a{font-size:11px;padding:6px 0}.nav-contact{padding:7px 15px}.hero{display:block;padding-top:35px;padding-bottom:32px}.hero .kicker{font-size:9px;letter-spacing:1.4px;margin-bottom:25px}.hero-main{padding:0}h1{font-size:clamp(54px,12vw,80px);letter-spacing:-3px;max-width:560px}.hero-copy{font-size:13px;margin:22px 0;max-width:350px}.button{font-size:11px;min-height:46px}.hero-note{margin:30px 0 0 14%;padding:17px 0 0;border-left:0;border-top:1px solid var(--line);font-size:12px;max-width:350px}.hero-note .kicker{font-size:8px;margin-bottom:10px}.hero-note .price-link{font-size:29px;margin-bottom:13px}.hero-note p{margin-bottom:13px}.hero-foot{font-size:8px;margin-top:27px;padding-bottom:15px;gap:20px}.hero-foot span:last-child{text-align:right;max-width:150px}.section-heading{align-items:start;gap:20px}.section-heading h2{font-size:32px}.section-heading .kicker{font-size:8px;letter-spacing:1px;max-width:100px;text-align:right;margin-top:6px}.work{padding-top:3px;padding-bottom:40px}.projects{grid-template-columns:1fr;gap:28px}.project:nth-child(2){margin:0 0 0 10%}.project:nth-child(3){margin-right:6%}.project-art{height:150px}.project-heading{margin-top:13px}.project h3{font-size:18px;margin-bottom:7px}.project p{font-size:12px;max-width:none}.story{grid-template-columns:1fr;gap:33px;padding-top:32px;padding-bottom:45px}.story-copy{grid-row:1}.story-copy h2{font-size:36px}.story-copy .kicker{font-size:9px;margin-bottom:20px}.narrative{font-size:13px}.results{gap:20px}.result:first-child{display:grid;grid-template-columns:1fr 1fr;gap:20px}.result:first-child .figure{font-size:49px;letter-spacing:-2px}.figure{font-size:37px}.result p{font-size:10px}.result-note{font-size:9px}.profile{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-items:center}.portrait{grid-column:1;grid-row:1/4;height:205px;margin:0 7px 0 0;padding:8px;box-shadow:7px 7px 0 var(--pale)}.portrait-inner{padding:10px 2px 35px}.portrait .am{font-size:clamp(67px,20vw,112px);letter-spacing:-11px}.portrait-label{font-size:6px;letter-spacing:.6px;left:6px;bottom:9px}.profile-name{font-size:20px;line-height:1.2;margin-bottom:8px}.profile-role{font-size:10px;margin:0}.education{grid-column:1/-1;margin:26px 0 0;font-size:11px}.education strong{font-size:8px;margin-bottom:10px}.services{padding-top:37px;padding-bottom:37px}.services-intro{display:block;margin-bottom:28px}.services-intro .kicker{font-size:9px;margin-bottom:20px}.services-intro h2{font-size:32px;letter-spacing:-1px}.services-intro blockquote{font-size:18px;margin:26px 0 0 7%;padding-left:17px}.services-body{grid-template-columns:1fr;gap:25px}.service-row{padding:18px 0;grid-template-columns:24px 1fr;gap:12px}.service-row h3{font-size:18px}.service-row p{font-size:12px}.package{padding:25px 22px}.package h3{font-size:28px}.price{font-size:65px}.contact{display:block;padding-top:40px;padding-bottom:40px}.contact .kicker{font-size:9px;margin-bottom:22px}.contact h2{font-size:45px;max-width:350px}.contact-copy{font-size:12px}.contact-right{border-top:1px solid var(--line);padding-top:23px;margin-top:28px}.contact-right .kicker{margin-bottom:12px}.email{font-size:clamp(22px,6.2vw,30px);letter-spacing:-.7px}.contact-right .button{margin-top:22px}.footer-row{display:block;padding-top:19px;padding-bottom:21px}.footer-row strong{font-size:11px}.footer-row p{font-size:9px;margin-top:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-    header { border:0; padding-top:1rem; }
-    .top { background:var(--surface); padding:.55rem .6rem .55rem .85rem; border:1px solid var(--line); border-radius:1.3rem; }
-    .brand { display:inline-flex; align-items:center; gap:.6rem; padding:0; }
-    .monogram { display:grid; place-items:center; width:2.15rem; height:2.15rem; border-radius:.65rem; background:var(--ink); color:white; font-size:.72rem; letter-spacing:.03em; }
-    nav { gap:.25rem; align-items:center; }
-    nav a { color:var(--ink); text-decoration:none; padding:.45rem .7rem; border-radius:.7rem; }
-    nav a:hover { background:var(--light); }
-    nav .nav-contact { background:var(--accent); color:white; }
-    nav .nav-contact:hover { background:var(--ink); }
-    h1 { max-width:12ch; }
-    .portrait { background:var(--frame); padding:.65rem; border-radius:1.5rem; }
-    .portrait img { aspect-ratio:4/4.15; }
-    .story-more { margin-top:1em; max-width:62ch; }
-    .project-card { padding:.65rem .65rem 1.05rem; background:var(--surface); }
-    .project-card h3,.project-card p,.project-action { margin-inline:.55rem; }
-    .project-art { height:clamp(6rem,12vw,9rem); border-radius:.65rem; background-color:var(--card); }
-    .art-deux { background-image:radial-gradient(circle at center, transparent 0 19%, #875c74 20% 21%, transparent 22% 32%, #875c74 33% 34%, transparent 35% 45%, #875c74 46% 47%, transparent 48%); }
-    .art-eco { background-image:repeating-radial-gradient(ellipse at 28% 110%, transparent 0 12px, #8d6b4e 13px 14px, transparent 15px 23px); }
-    .art-wise { background-image:linear-gradient(90deg, transparent 24%, #716080 24% 25%, transparent 25% 49%, #716080 49% 50%, transparent 50% 74%, #716080 74% 75%, transparent 75%), repeating-linear-gradient(0deg, transparent 0 22px, #71608055 23px 24px); }
-    @media (max-width:530px) {
-      .top { justify-content:center; gap:.3rem; }
-      nav { justify-content:center; }
-      nav a { padding:.4rem .48rem; }
-    }
-  </style>
+/* Dark palette and live portrait */
+html { color-scheme: dark; }
+body { background: radial-gradient(ellipse at 35% 0%, #182944 0%, var(--paper) 52rem); }
+section { scroll-margin-top: 0; }
+.anchor-alias { display: block; height: 0; }
+.hero h1 em { color: #edf6ff; text-shadow: 0 0 28px #84b9ff55; }
+.button { box-shadow: 0 0 20px #78adff28; }
+.button:hover { background: #e2efff; color: var(--white); }
+nav .nav-contact:hover { color: var(--ink); }
+.project:hover .project-art { box-shadow: 0 0 24px #85baff2e; }
+.project-art svg { filter: drop-shadow(0 0 6px #97c5ff44); }
+.work-intro { color: var(--muted); margin: 0; }
+.portrait { background: #17243e; border-color: var(--line); }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 48% 19%; }
+.email { overflow-wrap: anywhere; }
+.process { margin-top: 2rem; color: var(--muted); }
+.process summary { cursor: pointer; color: var(--deep); }
+@media (max-width: 380px) {
+  .wrap { padding-inline: 16px; }
+  nav { gap: 8px; }
+  .nav-contact { padding-inline: 10px; }
+  h1 { font-size: clamp(39px, 13vw, 54px); }
+}
+</style>
 </head>
 <body>
-  <header id="home">
-    <div class="wrap top">
-      <a class="brand" href="#home"><span class="monogram" aria-hidden="true">AM</span> Anita Manokore</a>
-      <nav aria-label="Main navigation">
-        <a href="#projects">Work</a>
-        <a href="#about">Story</a>
-        <a href="#services">Services</a>
-        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="wrap hero" aria-labelledby="intro-title">
-      <div>
-        <p class="intro">Hi, I’m Anita Manokore.</p>
-        <h1 id="intro-title">I find the problem in the data.</h1>
-        <p>I help local businesses and care teams use the data they already have to decide what to do next.</p>
-        <a class="button" href="#projects">See my work ↘</a>
-      </div>
-      <figure class="portrait">
-        <img src="./anita-manokore.jpg" width="850" height="1043" alt="Anita Manokore">
-      </figure>
-    </section>
-    <section id="projects" class="wrap border" aria-labelledby="projects-title">
-      <h2 id="projects-title">Selected projects</h2>
-      <p>A few projects I’ve worked on across health and environmental accountability.</p>
-      <div class="project-grid">
-        <a class="project-card deux" href="https://transcendent-chebakia-5c486c.netlify.app/" aria-labelledby="deux-title" aria-describedby="deux-description">
-          <span class="project-art art-deux" aria-hidden="true"></span>
-          <h3 id="deux-title">Deux Femmes</h3>
-          <p id="deux-description">Cycle health support with rural and remote communities in mind.</p>
-          <span class="project-action" aria-hidden="true">Visit project ↗</span>
-        </a>
-        <a class="project-card eco" href="https://anitamanokore112.github.io/ecotrace/" aria-labelledby="eco-title" aria-describedby="eco-description">
-          <span class="project-art art-eco" aria-hidden="true"></span>
-          <h3 id="eco-title">EcoTrace</h3>
-          <p id="eco-description">A prototype that connects scattered evidence for pollution investigations.</p>
-          <span class="project-action" aria-hidden="true">Visit project ↗</span>
-        </a>
-        <a class="project-card wise" href="https://www.wisehealthtechnologies.com/" aria-labelledby="wise-title" aria-describedby="wise-description">
-          <span class="project-art art-wise" aria-hidden="true"></span>
-          <h3 id="wise-title">Wise Health Technologies</h3>
-          <p id="wise-description">ILASS helps psychiatric care teams see changes between visits. In development.</p>
-          <span class="project-action" aria-hidden="true">Visit project ↗</span>
-        </a>
-      </div>
-    </section>
-    <section id="about" class="wrap border" aria-labelledby="about-title">
-      <h2 id="about-title">A pattern worth following</h2>
-      <p>At TelOne, I looked through billing and network data to find where the numbers didn’t line up. The errors I found helped recover more than $10,000. That experience captures what I like about working with data. A discrepancy can look small on a screen and matter a great deal once you know what’s behind it.</p>
-      <p class="story-more">I took the same approach into healthcare analytics, where I built Power BI reports to show what was happening across thousands of visits. When I reviewed website traffic, the question changed again. Where were people leaving, and what could we fix? My background in IT, software engineering, and analytics helps me follow a problem from the first clue to a practical next step.</p>
-      <div class="proof">
-        <article class="tile"><strong class="metric">$10,000+</strong><h3>Recovered at TelOne</h3><p>Billing errors identified during my TelOne internship.</p></article>
-        <article class="tile"><strong class="metric">5,073</strong><h3>Visits covered in Power BI</h3><p>U.S. healthcare internship covering billing, retention, and clinical progress.</p></article>
-        <article class="tile"><strong class="metric">≈1,600</strong><h3>Website visits reviewed</h3><p>I reviewed 2,200 page views, found high bounce rates, and proposed fixes.</p></article>
-      </div>
-      <div class="education">
-        <h3>Education</h3>
-        <ul>
-          <li>BTech in Information Technology and MTech in Software Engineering, Harare Institute of Technology</li>
-          <li>MS in Data Analytics and Visualization, Yeshiva University</li>
-        </ul>
-      </div>
-    </section>
-    <section id="services" class="wrap border" aria-labelledby="services-title">
-      <h2 id="services-title">How I help</h2>
-      <p>I look at your data with you to see where things get stuck and what’s worth investing in. That might mean hiring someone, buying software, or focusing your efforts on digital marketing and social media.</p>
-      <div class="services">
-        <article class="tile"><h3>Reach more of the right people</h3><p>Focus on the channels that show promise, from Google Business Profile to your website and social media.</p></article>
-        <article class="tile"><h3>Make it easier to get in touch</h3><p>Clearer paths to call, book, or send an inquiry.</p></article>
-        <article class="tile"><h3>Show you what’s working</h3><p>Monthly reports in plain language.</p></article>
-        <article class="tile"><h3>Fix the tools behind the scenes</h3><p>Appointment booking and simple data tools.</p></article>
-      </div>
-    </section>
-    <section class="wrap border offer" aria-label="Process and pricing">
-      <div id="how-it-works">
-        <h2>How it works</h2>
-        <ol class="steps">
-          <li>We talk about your business and what you want to improve.</li>
-          <li>I send a short proposal with the work and the price.</li>
-          <li>I carry out the agreed work.</li>
-          <li>I share a one-time or monthly report, depending on what we agree to.</li>
-        </ol>
-      </div>
-      <div id="pricing" class="package">
-        <h2>Visibility &amp; Inquiries Starter</h2>
-        <p>For businesses that want to be easier to find and easier to contact.</p>
-        <p class="price">Starting at $500</p>
-        <p>I’ll confirm the price after a short call.</p>
-        <ul>
-          <li>Google Business Profile optimization</li>
-          <li>Quick fixes to your website</li>
-          <li>One improvement to how you collect inquiries</li>
-          <li>A simple analytics report for your first month</li>
-        </ul>
-        <p>Optional ongoing support starts at <strong>$300/month</strong>.</p>
-      </div>
-    </section>
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 id="contact-title">Let’s talk about your business</h2>
-        <p>In a 20-minute call, we can talk through what you’d like to improve and see where I can help.</p>
-        <a class="button" href="mailto:manokoreanita@gmail.com?subject=20-minute%20consultation">Email me to set up a call</a>
-        <p class="contact-note">manokoreanita@gmail.com</p>
-      </div>
-    </section>
-  </main>
-  <footer class="wrap">Anita Manokore Consulting · Digital marketing and data</footer>
+<header><div class="wrap"><div class="header-row"><a class="brand" href="#home" aria-label="Anita Manokore Consulting home"><span class="brand-mark" aria-hidden="true">AM</span><span class="brand-name"><strong>Anita Manokore</strong><small>Consulting</small></span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#story">Story</a><a href="#services">Services</a><a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></nav></div></div></header>
+<main>
+<section class="hero wrap" id="home" aria-labelledby="hero-title"><p class="kicker">Digital marketing & data services · Anita Manokore Consulting</p><div class="hero-main"><h1 id="hero-title">I find the problem<br>in the <em>data.</em></h1><p class="hero-copy">For local businesses and care teams: a clearer view of what’s happening, where things get stuck, and what to do next.</p><a class="button" href="#work">Explore selected projects <span class="arrow" aria-hidden="true">↓</span></a></div><aside class="hero-note" aria-label="Services at a glance"><p class="kicker">For your business</p><p>Digital marketing, clearer ways to get in touch, and reporting you can use.</p><a class="price-link" href="#pricing">Visibility & Inquiries Starter<small>One-time · starting at $500</small></a><a class="text-link" href="#services">Explore services & pricing ↗</a></aside></section>
+<span class="anchor-alias" id="projects" aria-hidden="true"></span>
+<section class="work wrap" id="work" aria-labelledby="work-title"><div class="section-heading"><h2 id="work-title">Selected projects</h2><p class="work-intro">Projects I’ve worked on</p></div><div class="projects">
+<a class="project" href="https://transcendent-chebakia-5c486c.netlify.app/"><div class="project-art"><svg viewBox="0 0 350 170" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor"><circle cx="153" cy="85" r="53" stroke-width="1.2"/><circle cx="190" cy="85" r="53" stroke-width="1.2"/><circle cx="171.5" cy="85" r="22" stroke-width=".6"/><circle cx="153" cy="32" r="3" fill="currentColor"/></g></svg></div><div class="project-heading"><h3>Deux Femmes</h3><span class="arrow" aria-hidden="true">↗</span></div><p>A cycle health project considering the needs of women in rural and remote communities.</p></a>
+<a class="project" href="https://anitamanokore112.github.io/ecotrace/"><div class="project-art"><svg viewBox="0 0 350 170" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width=".9"><path d="M43 163C17 100 103 158 114 94S177-1 226 24 236 102 314 83"/><path d="M65 175C30 110 118 161 131 99S179 16 218 40 246 119 325 101"/><path d="M87 180C60 123 135 162 148 104S183 36 211 56 256 136 335 119"/><path d="M108 182C92 136 153 160 165 109S189 53 205 72 267 153 345 137"/><path d="M20 145C4 87 86 140 96 80S164-23 236 7 232 85 304 64"/><path d="M1 126C-10 67 69 124 78 66S151-43 248-9 229 68 295 46"/></g></svg></div><div class="project-heading"><h3>EcoTrace</h3><span class="arrow" aria-hidden="true">↗</span></div><p>An environmental investigation prototype that brings scattered evidence together to help people follow pollution leads.</p></a>
+<a class="project" href="https://www.wisehealthtechnologies.com/"><div class="project-art"><svg viewBox="0 0 350 170" aria-hidden="true" focusable="false"><g stroke="currentColor" fill="none" stroke-width=".6"><path d="M90 25H260M90 55H260M90 85H260M90 115H260M90 145H260M100 15V155M130 15V155M160 15V155M190 15V155M220 15V155M250 15V155"/></g><g fill="currentColor"><rect x="130" y="85" width="30" height="30" opacity=".25"/><rect x="160" y="55" width="30" height="30" opacity=".5"/><rect x="190" y="55" width="30" height="30" opacity=".8"/></g><path d="M100 115L145 100L175 70H205L250 40" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="project-heading"><h3>Wise Health Technologies</h3><span class="arrow" aria-hidden="true">↗</span></div><p>ILASS is a tool in development to help psychiatric care teams see changes between visits.</p></a>
+</div></section>
+<span class="anchor-alias" id="about" aria-hidden="true"></span>
+<section class="story wrap" id="story" aria-labelledby="story-title"><aside class="profile" aria-label="About Anita Manokore"><figure class="portrait"><img src="./anita-manokore.jpg" width="850" height="1043" alt="Anita Manokore"></figure><p class="profile-name">Anita Manokore</p><p class="profile-role">Digital marketing & data services</p><p class="education"><strong>Education</strong>BTech in Information Technology and MTech in Software Engineering<br>Harare Institute of Technology<br><br>MS in Data Analytics and Visualization<br>Yeshiva University</p></aside><div class="story-copy"><p class="kicker">Story / Relevant experience</p><h2 id="story-title">Start with the details.<br>Find the bigger picture.</h2><div class="narrative"><p>At TelOne, I found errors in billing and network data. As a data and business analyst intern, I checked large amounts of data and recovered more than $10,000 by identifying those errors. It was a practical lesson in looking closely at the information already there.</p><p>During a U.S. healthcare analytics internship, I built Power BI reports covering visits, billing and collections, retention, and clinical progress. The reports made patterns across visits easier to see.</p><p>In website analysis work, I reviewed visits and page views, found high bounce rates, and recommended next steps. That same approach connects my work today: look carefully, identify the problem, and make the next step clearer.</p></div><div class="results"><div class="result"><span class="figure">$10,000+</span><p>Recovered at TelOne after billing errors were identified.</p></div><div class="result"><span class="figure">5,073</span><p>Visits covered by Power BI reports during a U.S. healthcare analytics internship.</p></div><div class="result"><span class="figure">About 1,600</span><p>Website visits and 2,200 page views reviewed to identify high bounce rates and propose fixes.</p></div></div></div></section>
+<section class="services" id="services" aria-labelledby="services-title"><div class="wrap"><div class="services-intro"><div><p class="kicker">Services / A practical way forward</p><h2 id="services-title">I help local businesses and care teams use the data they already have to decide what to do next.</h2></div><blockquote>I look at your data with you to see where things get stuck and what's worth investing in. That might mean hiring someone, buying software, or focusing your efforts on digital marketing and social media.</blockquote></div><div class="services-body"><div class="service-list"><article class="service-row"><span class="index">01</span><div><h3>Marketing, with a clearer focus</h3><p>Choose the channels that show the most promise for your business — from Google Business Profile to your own website and social media.</p></div></article><article class="service-row"><span class="index">02</span><div><h3>Clearer ways to call or book</h3><p>Make it easier for customers to reach you or book an appointment.</p></div></article><article class="service-row"><span class="index">03</span><div><h3>Monthly reporting in plain language</h3><p>Understand what’s working through simple monthly reporting.</p></div></article><article class="service-row"><span class="index">04</span><div><h3>Practical tools for appointments or data</h3><p>Help with appointment booking and simple data tools, as needed.</p></div></article></div><article class="package" id="pricing" aria-labelledby="package-title"><p class="kicker">A focused starting point</p><h3 id="package-title">Visibility & Inquiries Starter</h3><div class="price-row"><p class="price"><span>Starting at</span>$500</p><span class="once">One-time</span></div><p class="price-note">(final price confirmed after a short consultation)</p><ul><li>Google Business Profile optimization</li><li>Website quick-fixes</li><li>One inquiry-capture improvement</li><li>First month’s simple analytics report</li></ul><a class="button" href="#contact">Discuss the starter package <span class="arrow" aria-hidden="true">↗</span></a><p class="ongoing">Need help after the initial work?<br><strong>Optional ongoing support from $300/month.</strong></p></article></div><details class="process" id="how-it-works"><summary>How we work together</summary><ol><li>Talk through your goals.</li><li>Review the proposal and price.</li><li>Get the agreed work done.</li><li>Review the results together.</li></ol></details></div></section>
+<section class="contact wrap" id="contact" aria-labelledby="contact-title"><div><p class="kicker">Let's talk</p><h2 id="contact-title">A conversation.<br>A clearer next step.</h2><p class="contact-copy">Tell me a little about your business and what you’d like to improve. We’ll start there.</p></div><div class="contact-right"><p class="kicker">Email Anita</p><a class="email" href="mailto:anitamanokoreconsultancy@gmail.com?subject=20-minute%20consultation">anitamanokoreconsultancy@gmail.com</a><br><a class="button" href="mailto:anitamanokoreconsultancy@gmail.com?subject=20-minute%20consultation">Book a 20-minute consultation <span class="arrow" aria-hidden="true">↗</span></a><p class="contact-sub">Services are tailored after a brief consultation.</p></div></section>
+</main><footer><div class="wrap footer-row"><strong>Anita Manokore Consulting</strong><p>Digital marketing & data services for local businesses and care teams.</p></div></footer>
 </body>
 </html>
