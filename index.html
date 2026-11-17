@@ -72,18 +72,43 @@
       .portrait { max-width:26rem; }
     }
     @media (max-width:460px) { .services { grid-template-columns:1fr; } }
+
+    :root { --paper:#f7f8f3; --ink:#162920; --muted:#46564e; --blue:#205642; --line:#d8e1d8; --light:#e5eee5; }
+    header { border:0; padding-top:1rem; }
+    .top { background:#fff; padding:.55rem .6rem .55rem .85rem; border:1px solid var(--line); border-radius:1.3rem; }
+    .brand { display:inline-flex; align-items:center; gap:.6rem; padding:0; }
+    .monogram { display:grid; place-items:center; width:2.15rem; height:2.15rem; border-radius:.65rem; background:var(--ink); color:white; font-size:.72rem; letter-spacing:.03em; }
+    nav { gap:.25rem; align-items:center; }
+    nav a { color:var(--ink); text-decoration:none; padding:.45rem .7rem; border-radius:.7rem; }
+    nav a:hover { background:var(--light); }
+    nav .nav-contact { background:var(--blue); color:white; }
+    nav .nav-contact:hover { background:var(--ink); }
+    h1 { max-width:12ch; }
+    .portrait { background:#e1ebe4; padding:.65rem; border-radius:1.5rem; }
+    .portrait img { aspect-ratio:4/4.15; }
+    .story-more { margin-top:1em; max-width:62ch; }
+    .project-card { padding:.65rem .65rem 1.05rem; background:#fff; }
+    .project-card h3,.project-card p,.project-action { margin-inline:.55rem; }
+    .project-art { height:clamp(6rem,12vw,9rem); border-radius:.65rem; background-color:var(--card); }
+    .art-deux { background-image:radial-gradient(circle at center, transparent 0 19%, #a04c69 20% 21%, transparent 22% 32%, #a04c69 33% 34%, transparent 35% 45%, #a04c69 46% 47%, transparent 48%); }
+    .art-eco { background-image:repeating-radial-gradient(ellipse at 28% 110%, transparent 0 12px, #408263 13px 14px, transparent 15px 23px); }
+    .art-wise { background-image:linear-gradient(90deg, transparent 24%, #476999 24% 25%, transparent 25% 49%, #476999 49% 50%, transparent 50% 74%, #476999 74% 75%, transparent 75%), repeating-linear-gradient(0deg, transparent 0 22px, #47699955 23px 24px); }
+    @media (max-width:530px) {
+      .top { justify-content:center; gap:.3rem; }
+      nav { justify-content:center; }
+      nav a { padding:.4rem .48rem; }
+    }
   </style>
 </head>
 <body>
   <header id="home">
     <div class="wrap top">
-      <a class="brand" href="#home">Anita Manokore Consulting</a>
+      <a class="brand" href="#home"><span class="monogram" aria-hidden="true">AM</span> Anita Manokore</a>
       <nav aria-label="Main navigation">
+        <a href="#projects">Work</a>
+        <a href="#about">Story</a>
         <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -91,30 +116,46 @@
     <section class="wrap hero" aria-labelledby="intro-title">
       <div>
         <p class="intro">Hi, I’m Anita Manokore.</p>
-        <h1 id="intro-title">I use data to solve practical problems.</h1>
-        <p>I look for where people get stuck, use data to understand why, and build practical fixes. For clinics, care organizations, and local businesses, that can mean helping customers find you, making it easier to book or ask a question, and showing you what’s working.</p>
-        <a class="button" href="#projects">Explore selected projects</a>
+        <h1 id="intro-title">I find the problem in the data.</h1>
+        <p>I turn what I find into practical fixes for local businesses and care teams.</p>
+        <a class="button" href="#projects">See my work ↘</a>
       </div>
       <figure class="portrait">
         <img src="./anita-manokore.jpg" width="850" height="1043" alt="Anita Manokore">
       </figure>
     </section>
-    <section id="services" class="wrap border" aria-labelledby="services-title">
-      <h2 id="services-title">How I can help</h2>
-      <div class="services">
-        <article class="tile"><h3>Help people find you</h3><p>I set up or improve your website, Google Business Profile, and social media so local customers can find you.</p></article>
-        <article class="tile"><h3>Make it easier to get in touch</h3><p>I look for places where people get stuck and make the next step clearer, whether that’s a call, a booking, or an inquiry.</p></article>
-        <article class="tile"><h3>Show you what’s working</h3><p>I put together simple monthly reports so you can see what people are doing and where there’s room to improve.</p></article>
-        <article class="tile"><h3>Fix the tools behind the scenes</h3><p>When you need it, I can help set up appointment booking or simple tools to organize your data.</p></article>
+    <section id="projects" class="wrap border" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected projects</h2>
+      <p>A few projects I’ve worked on across health and environmental accountability.</p>
+      <div class="project-grid">
+        <a class="project-card deux" href="https://transcendent-chebakia-5c486c.netlify.app/" aria-labelledby="deux-title" aria-describedby="deux-description">
+          <span class="project-art art-deux" aria-hidden="true"></span>
+          <h3 id="deux-title">Deux Femmes</h3>
+          <p id="deux-description">Cycle health support with rural and remote communities in mind.</p>
+          <span class="project-action" aria-hidden="true">Visit project ↗</span>
+        </a>
+        <a class="project-card eco" href="https://anitamanokore112.github.io/ecotrace/" aria-labelledby="eco-title" aria-describedby="eco-description">
+          <span class="project-art art-eco" aria-hidden="true"></span>
+          <h3 id="eco-title">EcoTrace</h3>
+          <p id="eco-description">A prototype that connects scattered evidence for pollution investigations.</p>
+          <span class="project-action" aria-hidden="true">Visit project ↗</span>
+        </a>
+        <a class="project-card wise" href="https://www.wisehealthtechnologies.com/" aria-labelledby="wise-title" aria-describedby="wise-description">
+          <span class="project-art art-wise" aria-hidden="true"></span>
+          <h3 id="wise-title">Wise Health Technologies</h3>
+          <p id="wise-description">ILASS helps psychiatric care teams see changes between visits. In development.</p>
+          <span class="project-action" aria-hidden="true">Visit project ↗</span>
+        </a>
       </div>
     </section>
     <section id="about" class="wrap border" aria-labelledby="about-title">
-      <h2 id="about-title">A little about me</h2>
-      <p>My background is in IT, software engineering, and analytics. I like digging into what’s happening behind the scenes and turning what I find into practical next steps. Here are a few examples from my internships and website analysis work.</p>
+      <h2 id="about-title">A pattern worth following</h2>
+      <p>At TelOne, I looked through billing and network data to find where the numbers didn’t line up. The errors I found helped recover more than $10,000. That experience captures what I like about working with data. A discrepancy can look small on a screen and matter a great deal once you know what’s behind it.</p>
+      <p class="story-more">I took the same approach into healthcare analytics, where I built Power BI reports to show what was happening across thousands of visits. When I reviewed website traffic, the question changed again. Where were people leaving, and what could we fix? My background in IT, software engineering, and analytics helps me follow a problem from the first clue to a practical next step.</p>
       <div class="proof">
-        <article class="tile"><strong class="metric">$10,000+</strong><h3>Recovered at TelOne</h3><p>As a data and business analyst intern, I reviewed billing and network data and found errors that led to more than $10,000 being recovered.</p></article>
-        <article class="tile"><strong class="metric">5,073</strong><h3>Visits covered in Power BI</h3><p>During a U.S. healthcare analytics internship, I built reports on visits, billing and collections, retention, and clinical progress.</p></article>
-        <article class="tile"><strong class="metric">≈1,600</strong><h3>Website visits reviewed</h3><p>I analyzed about 1,600 visits and 2,200 page views, identified high bounce rates, and recommended next steps.</p></article>
+        <article class="tile"><strong class="metric">$10,000+</strong><h3>Recovered at TelOne</h3><p>Billing errors identified during my TelOne internship.</p></article>
+        <article class="tile"><strong class="metric">5,073</strong><h3>Visits covered in Power BI</h3><p>U.S. healthcare internship covering billing, retention, and clinical progress.</p></article>
+        <article class="tile"><strong class="metric">≈1,600</strong><h3>Website visits reviewed</h3><p>I reviewed 2,200 page views, found high bounce rates, and proposed fixes.</p></article>
       </div>
       <div class="education">
         <h3>Education</h3>
@@ -124,25 +165,13 @@
         </ul>
       </div>
     </section>
-    <section id="projects" class="wrap border" aria-labelledby="projects-title">
-      <h2 id="projects-title">Selected projects</h2>
-      <p>A few projects I’ve worked on across health and environmental accountability.</p>
-      <div class="project-grid">
-        <a class="project-card deux" href="https://transcendent-chebakia-5c486c.netlify.app/" aria-labelledby="deux-title" aria-describedby="deux-description">
-          <h3 id="deux-title">Deux Femmes</h3>
-          <p id="deux-description">A cycle health project that helps women understand their cycles and find practical support, with rural and remote communities in mind.</p>
-          <span class="project-action" aria-hidden="true">Visit project ↗</span>
-        </a>
-        <a class="project-card eco" href="https://anitamanokore112.github.io/ecotrace/" aria-labelledby="eco-title" aria-describedby="eco-description">
-          <h3 id="eco-title">EcoTrace</h3>
-          <p id="eco-description">A prototype that helps environmental investigators bring scattered evidence together and follow leads about pollution.</p>
-          <span class="project-action" aria-hidden="true">Visit project ↗</span>
-        </a>
-        <a class="project-card wise" href="https://www.wisehealthtechnologies.com/" aria-labelledby="wise-title" aria-describedby="wise-description">
-          <h3 id="wise-title">Wise Health Technologies</h3>
-          <p id="wise-description">Home of ILASS, a tool in development to help psychiatric care teams see what changes between visits.</p>
-          <span class="project-action" aria-hidden="true">Visit project ↗</span>
-        </a>
+    <section id="services" class="wrap border" aria-labelledby="services-title">
+      <h2 id="services-title">How I can help</h2>
+      <div class="services">
+        <article class="tile"><h3>Help people find you</h3><p>Websites, Google Business Profile, and social media.</p></article>
+        <article class="tile"><h3>Make it easier to get in touch</h3><p>Clearer paths to call, book, or send an inquiry.</p></article>
+        <article class="tile"><h3>Show you what’s working</h3><p>Monthly reports in plain language.</p></article>
+        <article class="tile"><h3>Fix the tools behind the scenes</h3><p>Appointment booking and simple data tools.</p></article>
       </div>
     </section>
     <section class="wrap border offer" aria-label="Process and pricing">
