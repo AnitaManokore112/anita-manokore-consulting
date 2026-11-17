@@ -6,11 +6,15 @@
   <meta name="description" content="Anita Manokore uses data, design, and technology to solve practical problems for local businesses and care organizations.">
   <title>Anita Manokore Consulting | Digital Marketing &amp; Data</title>
   <style>
-    :root { --paper:#faf8f3; --ink:#18283c; --muted:#435467; --blue:#2148a3; --line:#d8dfe5; --light:#e8eef9; }
+    :root {
+      --paper:#fbf8f3; --ink:#28222b; --muted:#605660; --accent:#633b53;
+      --line:#e2d8d3; --light:#f2e9ed; --surface:#fffdfb; --frame:#ede4df;
+      --accent-hover:#49283b; --shadow:#35243616;
+    }
     * { box-sizing:border-box; }
     body { margin:0; background:var(--paper); color:var(--ink); font: 1.0625rem/1.65 "Geist","Segoe UI",sans-serif; }
-    a { color:var(--blue); text-underline-offset:.24em; }
-    a:focus-visible { outline:3px solid var(--blue); outline-offset:5px; }
+    a { color:var(--accent); text-underline-offset:.24em; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
     .wrap { width:min(68rem, calc(100% - 3rem)); margin-inline:auto; }
     header { border-bottom:1px solid var(--line); }
     .top { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem 2rem; padding-block:1.25rem; }
@@ -27,22 +31,22 @@
     h1 + p, h2 + p { margin-top:1.1rem; max-width:62ch; }
     h3 + p { margin-top:.5rem; }
     .hero { display:grid; grid-template-columns:1.35fr 1fr; align-items:center; gap:clamp(1.5rem, 6vw, 5rem); }
-    .intro { color:var(--blue); font-weight:650; margin-bottom:.65rem; }
+    .intro { color:var(--accent); font-weight:650; margin-bottom:.65rem; }
     .portrait img { display:block; width:100%; height:auto; aspect-ratio:4/4.65; object-fit:cover; object-position:center 13%; border-radius:1rem; }
-    .button { display:inline-block; margin-top:1.4rem; border-radius:.4rem; background:var(--blue); color:white; padding:.75rem 1.15rem; text-decoration:none; font-weight:650; }
-    .button:hover { background:#19387f; }
+    .button { display:inline-block; margin-top:1.4rem; border-radius:.4rem; background:var(--accent); color:white; padding:.75rem 1.15rem; text-decoration:none; font-weight:650; }
+    .button:hover { background:var(--accent-hover); }
     .border { border-top:1px solid var(--line); }
     .services,.proof { display:grid; gap:1.5rem; margin-top:2rem; }
     .services { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .proof { grid-template-columns:repeat(3,minmax(0,1fr)); }
     .tile { border-top:1px solid var(--line); padding-top:1rem; }
-    .metric { display:block; color:var(--blue); font:2.5rem/1.1 Georgia,serif; margin-bottom:.65rem; }
+    .metric { display:block; color:var(--accent); font:2.5rem/1.1 Georgia,serif; margin-bottom:.65rem; }
     .education { margin-top:2rem; border-top:1px solid var(--line); padding-top:1rem; }
     .education ul,.steps { padding-left:1.35rem; }
     .steps li,.package li { margin-bottom:.4rem; }
     .offer { display:grid; grid-template-columns:1fr 1.2fr; gap:clamp(2rem, 6vw, 5rem); align-items:start; }
     .package { background:var(--light); padding:clamp(1.25rem, 4vw, 2.25rem); border-radius:1rem; }
-    .price { color:var(--blue); font-weight:700; margin-top:.8rem; }
+    .price { color:var(--accent); font-weight:700; margin-top:.8rem; }
     .package ul { padding-left:1.25rem; }
     .contact { background:var(--light); }
     .contact-note { margin-top:.85rem; overflow-wrap:anywhere; }
@@ -53,14 +57,14 @@
       background:var(--card); color:var(--ink); text-decoration:none;
       transition:transform .2s ease, box-shadow .2s ease;
     }
-    .project-card:hover { transform:translateY(-4px); box-shadow:0 .5rem 1.2rem #18283c15; }
+    .project-card:hover { transform:translateY(-4px); box-shadow:0 .5rem 1.2rem var(--shadow); }
     .project-card h3 { font:1.65rem/1.12 Georgia,serif; }
     .project-card p { font-size:.96rem; }
-    .project-card .project-action { margin-top:auto; font-size:.9rem; font-weight:700; color:var(--blue); }
+    .project-card .project-action { margin-top:auto; font-size:.9rem; font-weight:700; color:var(--accent); }
     .project-card:hover .project-action { text-decoration:underline; }
-    .deux { --card:#f8e8ed; }
-    .eco { --card:#e4efe5; }
-    .wise { --card:#e8eef9; }
+    .deux { --card:#f2e4eb; }
+    .eco { --card:#efe6da; }
+    .wise { --card:#eae6ef; }
     @media (prefers-reduced-motion:reduce) {
       .project-card { transition:none; }
       .project-card:hover { transform:none; }
@@ -73,26 +77,25 @@
     }
     @media (max-width:460px) { .services { grid-template-columns:1fr; } }
 
-    :root { --paper:#f7f8f3; --ink:#162920; --muted:#46564e; --blue:#205642; --line:#d8e1d8; --light:#e5eee5; }
     header { border:0; padding-top:1rem; }
-    .top { background:#fff; padding:.55rem .6rem .55rem .85rem; border:1px solid var(--line); border-radius:1.3rem; }
+    .top { background:var(--surface); padding:.55rem .6rem .55rem .85rem; border:1px solid var(--line); border-radius:1.3rem; }
     .brand { display:inline-flex; align-items:center; gap:.6rem; padding:0; }
     .monogram { display:grid; place-items:center; width:2.15rem; height:2.15rem; border-radius:.65rem; background:var(--ink); color:white; font-size:.72rem; letter-spacing:.03em; }
     nav { gap:.25rem; align-items:center; }
     nav a { color:var(--ink); text-decoration:none; padding:.45rem .7rem; border-radius:.7rem; }
     nav a:hover { background:var(--light); }
-    nav .nav-contact { background:var(--blue); color:white; }
+    nav .nav-contact { background:var(--accent); color:white; }
     nav .nav-contact:hover { background:var(--ink); }
     h1 { max-width:12ch; }
-    .portrait { background:#e1ebe4; padding:.65rem; border-radius:1.5rem; }
+    .portrait { background:var(--frame); padding:.65rem; border-radius:1.5rem; }
     .portrait img { aspect-ratio:4/4.15; }
     .story-more { margin-top:1em; max-width:62ch; }
-    .project-card { padding:.65rem .65rem 1.05rem; background:#fff; }
+    .project-card { padding:.65rem .65rem 1.05rem; background:var(--surface); }
     .project-card h3,.project-card p,.project-action { margin-inline:.55rem; }
     .project-art { height:clamp(6rem,12vw,9rem); border-radius:.65rem; background-color:var(--card); }
-    .art-deux { background-image:radial-gradient(circle at center, transparent 0 19%, #a04c69 20% 21%, transparent 22% 32%, #a04c69 33% 34%, transparent 35% 45%, #a04c69 46% 47%, transparent 48%); }
-    .art-eco { background-image:repeating-radial-gradient(ellipse at 28% 110%, transparent 0 12px, #408263 13px 14px, transparent 15px 23px); }
-    .art-wise { background-image:linear-gradient(90deg, transparent 24%, #476999 24% 25%, transparent 25% 49%, #476999 49% 50%, transparent 50% 74%, #476999 74% 75%, transparent 75%), repeating-linear-gradient(0deg, transparent 0 22px, #47699955 23px 24px); }
+    .art-deux { background-image:radial-gradient(circle at center, transparent 0 19%, #875c74 20% 21%, transparent 22% 32%, #875c74 33% 34%, transparent 35% 45%, #875c74 46% 47%, transparent 48%); }
+    .art-eco { background-image:repeating-radial-gradient(ellipse at 28% 110%, transparent 0 12px, #8d6b4e 13px 14px, transparent 15px 23px); }
+    .art-wise { background-image:linear-gradient(90deg, transparent 24%, #716080 24% 25%, transparent 25% 49%, #716080 49% 50%, transparent 50% 74%, #716080 74% 75%, transparent 75%), repeating-linear-gradient(0deg, transparent 0 22px, #71608055 23px 24px); }
     @media (max-width:530px) {
       .top { justify-content:center; gap:.3rem; }
       nav { justify-content:center; }
